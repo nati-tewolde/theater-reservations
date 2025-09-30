@@ -36,6 +36,7 @@ public class TheaterReservations {
 
         System.out.println(tickets + " " + ticketName + " reserved for " + formattedDate + " under " + lastName + ", " + firstName);
 
+        input.close();
 
     }
 }
