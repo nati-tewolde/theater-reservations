@@ -25,13 +25,14 @@ public class TheaterReservations {
         String firstName = name.substring(0, atSpace);
         String lastName = name.substring(atSpace + 1);
 
-        String ticketName = "";
+        /*String ticketName = "";
         if(tickets <= 1){
             ticketName = "ticket";
         } else {
             ticketName = "tickets";
-        }
+        }*/
 
+        String ticketName = (tickets <= 1) ? "ticket" : "tickets";
 
         System.out.println(tickets + " " + ticketName + " reserved for " + formattedDate + " under " + lastName + ", " + firstName);
 
